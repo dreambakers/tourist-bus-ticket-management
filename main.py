@@ -200,7 +200,7 @@ def bookUserWindow():
     global total_entry
     total_entry = Entry(userWindow, font=(10))
     total_entry.grid(row=3, column=1)
-    total_button=Button(userWindow,width=30,text='Calculate Fare',command=lambda: calculate_fare(tour_id.get(),no_adult.get(),no_child.get()))
+    total_button=Button(userWindow,width=30,text='Calculate Ticket',command=lambda: calculate_fare(tour_id.get(),no_adult.get(),no_child.get()))
     total_button.grid(pady=15,row=4, column=1)
 
     b=Button(userWindow,width=30,text='Confirm Booking',command=lambda: reserve_booking(tour_id.get(),no_adult.get(),no_child.get()))
